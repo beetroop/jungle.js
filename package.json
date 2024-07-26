@@ -1,0 +1,16 @@
+{
+  "name": "jungle.js",
+  "author": "github/beetroop",
+  "scripts": {
+    "dev": "esbuild src/sketch.ts --bundle --outfile=src/sketch.js --watch",
+    "build": "esbuild src/sketch.ts --bundle --outfile=src/sketch.js"
+  },
+  "dependencies": {
+    "p5": "^1.9.4",
+    "tone": "^15.0.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0",
+    "@types/p5": "^1.7.6"
+  }
+}
