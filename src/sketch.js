@@ -35234,9 +35234,7 @@
       sequence.events.shift();
     }
     getNext(divisions, chops) {
-      if (this.ordinal < divisions - 1) return chops[this.ordinal + 1];
-      if (this.ordinal === divisions - 1) return chops[0];
-      throw new Error("how did we get here");
+      return chops[(this.ordinal + 1) % divisions];
     }
   };
 
